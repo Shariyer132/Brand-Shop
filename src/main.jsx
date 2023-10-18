@@ -1,20 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import {RouterProvider} from "react-router-dom";
 import "./index.css";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <h3>hello</h3>
-  },
-]);
+import router from './routes/Routes';
+import AuthProviders from './providers/AuthProviders';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProviders>
     <RouterProvider router={router}/>
+    </AuthProviders>
+   
   </React.StrictMode>,
 )
