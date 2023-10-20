@@ -8,7 +8,7 @@ const MyCart = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div>
+            <div className="grid grid-cols-1 mx-10 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
                     products.map(product=> <CartProducts key={product._id} product={product}></CartProducts>)
                 }
