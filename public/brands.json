@@ -1,22 +1,38 @@
 [
     {
-        "name": "Apple",
-        "image": ""
+        "id": 1,
+        "name": "Apple Inc. - Multinational Technology",
+        "image": "https://i.ibb.co/Hg3fMVs/download-removebg-preview.png",
+        "brandName": "Apple"
     },
     {
-        "name": "Samsung",
-        "image": ""
+        "id": 2,
+        "name": "Samsung Electronics Co.,",
+        "image": "https://i.ibb.co/mDy0g08/png-transparent-samsung-galaxy-gurugram-faridabad-logo-samsung-blue-text-logo-removebg-preview.png",
+        "brandName": "Samsung"
     },
     {
-        "name": "Sony",
-        "image": ""
+        "id": 3,
+        "name": "Sony Corporation - Multinational Electronics",
+        "image": "https://i.ibb.co/zFsL722/download-1-removebg-preview.png",
+        "brandName": "Sony"
     },
     {
-        "name": "Google",
-        "image": ""
+        "id": 4,
+        "name": "Google LLC - Multinational Technology Company",
+        "image": "https://i.ibb.co/Bw4N7j4/580b57fcd9996e24bc43c51f.png",
+        "brandName": "Google"
     },
     {
-        "name": "Intel",
-        "image": ""
+        "id": 5,
+        "name": "Intel Corporation - Multinational Chip Manufacturer",
+        "image": "https://i.ibb.co/GRBRdgr/gratis-png-intel-portatil-convencional-pci-logo-unidad-central-de-procesamiento-intel-thumbnail-remo.png",
+        "brandName": "Intel"
+    },
+    {
+        "id": 6,
+        "name": "Microsoft Corporation - Multinational Technology Company",
+        "image": "https://i.ibb.co/hR9vTjL/images-removebg-preview.png",
+        "brandName": "Microsoft"
     }
 ]

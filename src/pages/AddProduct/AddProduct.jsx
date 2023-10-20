@@ -32,7 +32,7 @@ const AddProduct = () => {
                         text: 'Your product added successfully',
                         icon: 'success',
                         confirmButtonText: 'Ok'
-                      })
+                    })
                 }
                 form.reset();
             })
