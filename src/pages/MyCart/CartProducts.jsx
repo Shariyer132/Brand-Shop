@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const CartProducts = ({ product }) => {
+    const navigate = useNavigate();
     const { _id, photoUrl, name, brandName, type, price, rating } = product;
+    const handleDetails = _id =>{
+        navigate(`/cartProducts/${_id}`)
+    }
     const handleDelete = _id => {
         Swal.fire({
             title: 'Are you sure?',
@@ -65,6 +70,7 @@ const CartProducts = ({ product }) => {
                         <p>Rate: {rating}</p>
                     </div>
                     <div className="card-actions justify-end">
+                        <button onClick={()=>handleDetails(_id)} className='btn btn-info btn-outline'>Details</button>
                         <button onClick={() => handleDelete(_id)} className="btn btn-outline btn-info">Delete</button>
                     </div>
                 </div>
