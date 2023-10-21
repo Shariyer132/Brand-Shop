@@ -11,6 +11,8 @@ const Brands = ({ handleViewPage }) => {
 
     return (
         <div>
+            <h2 className="text-5xl text-center mt-14">Our Latest Brands</h2>
+            <p></p>
             <div className="grid grid-cols-1 gap-5 lg:mx-10 p-10 lg:grid-cols-3 md:grid-cols-2">
                 {
                     brands.map((brand) =>

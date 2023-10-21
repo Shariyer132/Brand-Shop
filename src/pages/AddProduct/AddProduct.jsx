@@ -39,7 +39,7 @@ const AddProduct = () => {
     }
     return (<>
         <Navbar></Navbar>
-        <div className="bg-[#D1E8E2] p-24">
+        <div className="p-24">
             <form onSubmit={handleSubmit}>
                 <div className="md:flex gap-5">
                     {/* image */}

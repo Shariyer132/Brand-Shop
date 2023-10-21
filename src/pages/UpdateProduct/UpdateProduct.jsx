@@ -51,7 +51,7 @@ const UpdateProduct = () => {
                             <span className="label-text">Photo URL</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" defaultValue={photoUrl} placeholder="Product image URL" name="PhotoUrl" className="input input-bordered w-full" />
+                            <input type="text" defaultValue={photoUrl} required placeholder="Product image URL" name="PhotoUrl" className="input input-bordered w-full" />
                         </label>
                     </div>
                     {/* name */}
@@ -60,7 +60,7 @@ const UpdateProduct = () => {
                             <span className="label-text">Product Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" defaultValue={name} placeholder="Product Name" name="name" className="input input-bordered w-full" />
+                            <input type="text" defaultValue={name} required placeholder="Product Name" name="name" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const UpdateProduct = () => {
                             <span className="label-text"> Brand</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" defaultValue={brandName} placeholder="Brand Name" name="brandName" className="input input-bordered w-full" />
+                            <input type="text" defaultValue={brandName} required placeholder="Brand Name" name="brandName" className="input input-bordered w-full" />
                         </label>
                     </div>
                     {/* type */}
@@ -80,7 +80,7 @@ const UpdateProduct = () => {
                             <span className="label-text"> Category</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" defaultValue={type} placeholder="Category" name="type" className="input input-bordered w-full" />
+                            <input type="text" defaultValue={type} required placeholder="Category" name="type" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ const UpdateProduct = () => {
                             <span className="label-text"> Price</span>
                         </label>
                         <label className="input-group">
-                            <input type="number" name="price" defaultValue={price} placeholder="Product Price" className="input input-bordered w-full" />
+                            <input type="number" name="price" defaultValue={price} required placeholder="Product Price" className="input input-bordered w-full" />
                         </label>
                     </div>
                     {/* rating */}
@@ -100,7 +100,7 @@ const UpdateProduct = () => {
                             <span className="label-text">Rate Product</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" defaultValue={rating} placeholder="Rating" name="rating" className="input input-bordered w-full" />
+                            <input type="text" defaultValue={rating} required placeholder="Rating" name="rating" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const UpdateProduct = () => {
                         <span className="label-text">Description</span>
                     </label>
                     <label className="input-group">
-                        <input type="text" name="description" defaultValue={description} placeholder="short description of product" className="input input-bordered w-full" />
+                        <input type="text" name="description" defaultValue={description} required placeholder="short description of product" className="input input-bordered w-full" />
                     </label>
                 </div>
 

@@ -4,12 +4,14 @@ import Footer from "../../shared/Footer/Footer";
 import Header from "../../shared/Header/Header";
 import Navbar from "../../shared/Navbar/Navbar";
 import Brands from "../Brands/Brands";
+import AboutUs from "../AboutUs.jsx/AboutUs";
+import WhyChoose from "../WhyChoose/WhyChoose";
 
 const Home = () => {
     // const products = useLoaderData();
     const navigate = useNavigate();
     // console.log(products);
-    const handleViewPage = brandName =>{
+    const handleViewPage = brandName => {
         navigate(`/products/${brandName}`)
     }
 
@@ -18,7 +20,8 @@ const Home = () => {
             <Navbar />
             <Header />
             <Brands handleViewPage={handleViewPage} />
-            {/* <Brands/> */}
+            <AboutUs />
+            <WhyChoose/>
             <Footer />
         </div>
     );

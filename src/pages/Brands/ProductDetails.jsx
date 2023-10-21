@@ -13,7 +13,13 @@ const ProductDetails = () => {
     const handleAddToCart = (product) => {
         const isProductInCart = cartItems.some(item => item._id === product._id);
         if (isProductInCart) {
-            alert('Product is already in the cart.');
+            Swal.fire({
+                title: 'Alert!',
+                text: 'You already add this card',
+                icon: 'warning',
+                confirmButtonText: 'Ok'
+            })
+            return;
         } else {
             setCartItems(prevItems => [...prevItems, product]);
         }
@@ -37,7 +43,6 @@ const ProductDetails = () => {
                         confirmButtonText: 'Ok'
                     })
                 }
-                console.log(data)
             })
             .catch(err => console.error("Error adding to cart:", err));
     }
