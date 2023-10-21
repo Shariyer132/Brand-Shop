@@ -26,7 +26,7 @@ const ProductDetails = () => {
 
         if (!product) return;
 
-        fetch('http://localhost:5000/cartProducts', {
+        fetch('https://coffee-shop-server-eight.vercel.app/cartProducts', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

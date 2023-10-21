@@ -18,7 +18,7 @@ const UpdateProduct = () => {
         const description = form.description.value;
         const product = { photoUrl, name, brandName, type, price, rating, description };
         console.log(product);
-        fetch('http://localhost:5000/products', {
+        fetch('https://coffee-shop-server-eight.vercel.app/products', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

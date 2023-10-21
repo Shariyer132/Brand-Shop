@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             {
                 path: "/products/:brandName",
                 element: <BrandsDetails />,
-                loader: () => fetch('http://localhost:5000/products')
+                loader: () => fetch('https://coffee-shop-server-eight.vercel.app/products')
 
             },
             {
@@ -35,22 +35,22 @@ const router = createBrowserRouter([
             {
                 path: "/updateProduct/:id",
                 element: <PrivateRoutes><UpdateProduct/></PrivateRoutes>,
-                loader: ({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({params})=>fetch(`https://coffee-shop-server-eight.vercel.app/${params.id}`)
             },
             {
                 path: "/myCart",
                 element: <PrivateRoutes> <MyCart /></PrivateRoutes>,
-                loader: () => fetch('http://localhost:5000/cartProducts')
+                loader: () => fetch('https://coffee-shop-server-eight.vercel.app/cartProducts')
             },
             {
                 path: "/productDetails/:id",
                 element: <PrivateRoutes> <ProductDetails /></PrivateRoutes>,
-                loader: () => fetch('http://localhost:5000/products')
+                loader: () => fetch('https://coffee-shop-server-eight.vercel.app/products')
             },
             {
                 path: "/cartProducts/:id",
                 element: <MySingleCartDetails/>,
-                loader: ()=> fetch('http://localhost:5000/cartProducts')
+                loader: ()=> fetch('https://coffee-shop-server-eight.vercel.app/cartProducts')
             },
             {
                 path: "/login",
