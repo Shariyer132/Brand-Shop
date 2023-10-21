@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Swal from 'sweetalert2';
 
 const CartProducts = ({ product }) => {
-    const { photoUrl, name, brandName, type, price, rating } = product;
+    const { _id, photoUrl, name, brandName, type, price, rating } = product;
     const handleDelete = _id => {
         Swal.fire({
             title: 'Are you sure?',
@@ -14,19 +14,6 @@ const CartProducts = ({ product }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                // fetch(`http://localhost:5000/cartProducts/${_id}`,{
-                //     method: 'DELETE'
-                // })
-                // .then(res=>res.json())
-                // .then(data=>{
-                //     if (data.deleteCount > 0) {
-                //           Swal.fire(
-                //                 'Deleted!',
-                //                 'Your product has been deleted.',
-                //                 'success'
-                //               )
-                //         }
-                //     })
                 fetch(`http://localhost:5000/cartProducts/${_id}`, {
                     method: 'DELETE'
                 })
@@ -78,7 +65,7 @@ const CartProducts = ({ product }) => {
                         <p>Rate: {rating}</p>
                     </div>
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleDelete(product._id)} className="btn btn-outline btn-info">Delete</button>
+                        <button onClick={() => handleDelete(_id)} className="btn btn-outline btn-info">Delete</button>
                     </div>
                 </div>
             </div>
